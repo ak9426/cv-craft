@@ -23,7 +23,15 @@ export default function App() {
   const [cvData, setCvData] = useState<CVData>(() => {
     try {
       const stored = localStorage.getItem(LOCAL_STORAGE_CV_KEY);
-      return stored ? JSON.parse(stored) : SAMPLE_CV;
+      const parsed = stored ? JSON.parse(stored) : SAMPLE_CV;
+      return {
+        ...parsed,
+        personalInfo: {
+          ...parsed.personalInfo,
+          photoUrl: '',
+          showPhoto: false,
+        },
+      };
     } catch {
       return SAMPLE_CV;
     }
