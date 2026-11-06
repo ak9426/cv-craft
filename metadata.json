@@ -1,0 +1,6 @@
+{
+  "name": "CVCraft - Professional CV & Resume Builder",
+  "description": "Create modern, ATS-friendly, professional CVs and resumes in minutes with live preview, AI assistance, and instant PDF/image export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
